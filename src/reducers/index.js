@@ -2,6 +2,8 @@ import {combineReducers} from 'redux';
 
 import * as ActionTypes from '../actions';
 
+import {todos, visibilityFilter} from './todos';
+
 const errorMessage = (state = '', action) => {
 	const {type, error} = action;
 
@@ -15,7 +17,9 @@ const errorMessage = (state = '', action) => {
 };
 
 const rootReducer = combineReducers({
-	errorMessage
+	errorMessage,
+	todos,
+	visibilityFilter
 });
 
 export default rootReducer;
