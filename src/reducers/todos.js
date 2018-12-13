@@ -2,7 +2,9 @@ import * as ActionTypes from '../actions';
 
 export const todos = (state = [], action) => {
 	switch (action.type) {
-		case ActionTypes.ADD_TODO:
+		case ActionTypes.GET_TODOS_SUCCESS:
+			return [...action.todos];
+		case ActionTypes.ADD_TODO_SUCCESS:
 			return [
 				...state,
 				{
