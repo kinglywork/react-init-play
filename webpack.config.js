@@ -9,7 +9,8 @@ module.exports = {
 	devtool: 'source-map',
 	devServer: {
 		contentBase: './dist',
-		hot: true
+		hot: true,
+		historyApiFallback: true
 	},
 	entry: {
 		app: './src/index.js'
