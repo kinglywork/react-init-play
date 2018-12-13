@@ -7,7 +7,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div className={styles.hello}>
-				hello react.
+				hello react. HMR
 				<img src={Brander}/>
 				<div className={styles.brander}>{'this is brander container'}</div>
 			</div>
